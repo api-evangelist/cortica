@@ -1,0 +1,37 @@
+generated: '2026-08-11'
+method: probed
+source: live HTTPS probes of cortica.com and www.cortica.com
+note: >-
+  Recorded absence. Every /.well-known/ path was probed on both hosts and every one
+  returned 404 on the apex (www redirects 301 to the apex, so the apex result is
+  authoritative). No document of any kind is served from the /.well-known/ namespace,
+  so NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file documents
+  an absence, not a presence.
+hosts:
+- https://cortica.com
+- https://www.cortica.com
+documents:
+- path: /.well-known/security.txt          # RFC 9116
+  status: 404
+- path: /.well-known/openid-configuration  # OIDC discovery
+  status: 404
+- path: /.well-known/oauth-authorization-server  # RFC 8414
+  status: 404
+- path: /.well-known/oauth-protected-resource    # RFC 9728
+  status: 404
+- path: /.well-known/api-catalog           # RFC 9727
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json       # A2A 1.0.0
+  status: 404
+- path: /.well-known/agent.json            # A2A pre-0.3 legacy
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+x-evidence:
+  fetched: '2026-08-11'
+  host: cortica.com
+  hits: 0
+  probed: 9
+  www_behavior: 301 redirect to apex for every /.well-known/ path
