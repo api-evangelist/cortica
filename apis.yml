@@ -13,6 +13,17 @@ description: 'Cortica is a Tel Aviv, Israel based Autonomous AI company founded 
   (industrial quality inspection, with Johnson Electric). Cortica itself publishes no
   developer program, API, SDK or machine-readable specification on its own domain.'
 url: https://raw.githubusercontent.com/api-evangelist/cortica/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cortica.com/wp-content/uploads/2023/05/Favicon.png
 x-type: company
 x-source: harvest:secondary-market
