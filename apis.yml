@@ -47,8 +47,8 @@ modified: '2026-08-11'
 tags:
 - Company
 - Artificial Intelligence
-- Computer-Vision
-- Machine-Learning
+- Computer Vision
+- Machine Learning
 - Autonomous Systems
 - Venture Builder
 - Israel
@@ -62,6 +62,8 @@ tags_raw:
 - Venture Builder
 - Israel
 - Deep Tech
+- Computer-Vision
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
